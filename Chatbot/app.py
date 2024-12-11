@@ -11,7 +11,7 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Load the saved model 
-model = tf.keras.models.load_model("chatbot_model.keras") 
+model = tf.keras.models.load_model("Chatbot/chatbot_model.keras") 
 
 # Load the saved tokenizer 
 with open("tokenizer.pkl", 'rb') as f:
