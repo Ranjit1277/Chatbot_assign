@@ -11,10 +11,10 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Load the saved model 
-model = tf.keras.models.load_model(r"C:\Users\Asus\OneDrive\Desktop\Chatbot\chatbot_model.keras") 
+model = tf.keras.models.load_model("chatbot_model.keras") 
 
 # Load the saved tokenizer 
-with open(r"C:\Users\Asus\OneDrive\Desktop\Chatbot\tokenizer.pkl", 'rb') as f:
+with open("tokenizer.pkl", 'rb') as f:
     tokenizer = pickle.load(f)
 
 max_len = 125 
